@@ -3,99 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fashionable Portfolio</title>
+  <title>My PhD Funding Portfolio</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <!-- Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
   <style>
-    /* CSS Variables */
+    /* Root & Dark Theme Variables */
     :root {
-      --primary-color: #ff4c60;
-      --secondary-color: #333;
-      --bg-color: #fff;
-      --font-serif: 'Playfair Display', serif;
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --accent-color: #bb86fc;
+      --muted-color: #757575;
       --font-sans: 'Roboto', sans-serif;
+      --font-bold: 'Montserrat', sans-serif;
     }
-    /* Global Reset & Typography */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: var(--bg-color); color: var(--secondary-color); font-family: var(--font-sans); line-height: 1.6; }
-    h1, h2, h3 { font-family: var(--font-serif); }
-    a { color: var(--primary-color); text-decoration: none; }
-    /* Navbar */
-    header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: var(--bg-color); position: sticky; top: 0; z-index: 100; }
-    nav ul { list-style: none; display: flex; gap: 1.5rem; }
-    /* Hero Section */
-    .hero { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100vh; background: url('hero-bg.jpg') center/cover no-repeat; color: #fff; }
-    .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-    .hero p { font-size: 1.25rem; margin-bottom: 1.5rem; }
-    .btn { padding: 0.75rem 1.5rem; background: var(--primary-color); border: none; border-radius: 2rem; color: #fff; cursor: pointer; font-size: 1rem; transition: background 0.3s; }
-    .btn:hover { background: #e04353; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg-color); color: var(--text-color); font-family: var(--font-sans); line-height: 1.6; }
+    a { color: var(--accent-color); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header, footer { text-align: center; padding: 1rem; }
+    header { border-bottom: 1px solid var(--muted-color); }
+    footer { border-top: 1px solid var(--muted-color); margin-top: 2rem; }
+    h1, h2, h3 { font-family: var(--font-bold); margin-bottom: 0.5rem; }
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem; }
+    nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 4rem 0; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.125rem; color: var(--muted-color); }
+    .btn { display: inline-block; margin-top: 1.5rem; padding: 0.75rem 1.5rem; background: var(--accent-color); border-radius: 999px; font-weight: 500; }
+
     /* Sections */
-    section { padding: 4rem 2rem; }
-    .about, .portfolio { max-width: 1000px; margin: 0 auto; }
-    .portfolio-items { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
-    .portfolio-item { flex: 1 1 calc(33% - 2rem); min-width: 250px; background: #f9f9f9; padding: 1rem; border-radius: 0.5rem; }
-    .portfolio-item img { width: 100%; border-radius: 0.5rem; }
-    /* Footer */
-    footer { background: var(--secondary-color); color: #fff; text-align: center; padding: 2rem; }
-    footer a { color: #fff; margin: 0 0.5rem; }
+    section { margin-top: 3rem; }
+    .about, .research, .funding { margin-bottom: 2rem; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: #1e1e1e; padding: 1.5rem; border-radius: 0.5rem; }
+    .card h3 { margin-bottom: 0.5rem; }
+    .card p { color: var(--muted-color); font-size: 0.95rem; }
+
+    /* Footer Social */
+    .social a { margin: 0 0.5rem; font-size: 1.25rem; color: var(--text-color); }
   </style>
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Header -->
   <header>
-    <h2>MyBrand</h2>
+    <h1>Jane Doe, PhD Candidate</h1>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#funding">Funding</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <!-- Hero -->
-  <section class="hero">
-    <h1>Welcome to My World</h1>
-    <p>Where style meets innovation.</p>
-    <button class="btn">Discover More</button>
+  <section class="hero container">
+    <h1>Pursuing PhD in Computer Science 🇺🇸</h1>
+    <p>Showcasing research interests, publications, and funding opportunities.</p>
+    <a class="btn" href="#research">Explore Research</a>
   </section>
-  <!-- About -->
-  <section id="about" class="about">
+
+  <!-- About Section -->
+  <section id="about" class="about container">
     <h2>About Me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+    <p>Academic background: B.S. in Computer Science (CGPA 3.95), GRE 310, IELTS 7.5, published author in Q1 journal and final-year student preparing PhD applications.</p>
   </section>
-  <!-- Portfolio -->
-  <section id="portfolio" class="portfolio">
-    <h2>My Portfolio</h2>
-    <div class="portfolio-items">
-      <div class="portfolio-item">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project One</h3>
+
+  <!-- Research Section -->
+  <section id="research" class="research container">
+    <h2>Research Interests</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Machine Learning</h3>
+        <p>Deep learning, model interpretability, and domain adaptation techniques for real-world data.</p>
       </div>
-      <div class="portfolio-item">
-        <img src="project2.jpg" alt="Project 2">
-        <h3>Project Two</h3>
+      <div class="card">
+        <h3>Distributed Systems</h3>
+        <p>Scalable microservices architectures and fault-tolerant protocols.</p>
       </div>
-      <div class="portfolio-item">
-        <img src="project3.jpg" alt="Project 3">
-        <h3>Project Three</h3>
+      <div class="card">
+        <h3>Human-Computer Interaction</h3>
+        <p>Usability studies and designing inclusive user interfaces.</p>
       </div>
     </div>
   </section>
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>Email me at <a href="mailto:example@example.com">example@example.com</a></p>
+
+  <!-- Funding Section -->
+  <section id="funding" class="funding container">
+    <h2>PhD Funding Resources</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>NSF Graduate Research Fellowship</h3>
+        <p>Supports outstanding graduate students in NSF-supported STEM disciplines (3 years of funding) <a href="https://www.nsfgrfp.org">Learn more</a></p>
+      </div>
+      <div class="card">
+        <h3>AAUW Fellowships</h3>
+        <p>Funding for women pursuing full-time graduate or postdoctoral study in the U.S.</p>
+      </div>
+      <div class="card">
+        <h3>MIT Presidential Fellowship</h3>
+        <p>Prestigious fellowship covering stipend and tuition for MIT PhD students.</p>
+      </div>
+    </div>
   </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:jane.doe@example.com">jane.doe@example.com</a></p>
+    <div class="social">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 MyBrand. All rights reserved.</p>
-    <div>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
+    <p>&copy; 2025 Jane Doe. All rights reserved.</p>
   </footer>
 </body>
 </html>
