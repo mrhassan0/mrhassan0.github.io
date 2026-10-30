@@ -172,7 +172,7 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
     });
   }, { rootMargin: '0px 0px -8% 0px' });
   // Only content below the fold is hidden, so nothing visible flashes on load.
-  document.querySelectorAll('.section-label, .section h2, .section-heading p, .about-copy, .paper, .thesis-details, .project-toolbar, .project-card, .experience-intro > p, .academic-mark, .timeline-entry, .skills-list > div, .contact-grid > div, .references').forEach(element => {
+  document.querySelectorAll('.section-label, .section h2, .section-heading p, .news-intro > p, .news-item, .about-copy, .paper, .thesis-details, .project-toolbar, .project-card, .experience-intro > p, .academic-mark, .timeline-entry, .skills-list > div, .contact-grid > div, .references').forEach(element => {
     if (element.getBoundingClientRect().top < window.innerHeight) return;
     element.classList.add('reveal');
     revealObserver.observe(element);
