@@ -23,7 +23,7 @@ document.addEventListener('keydown', event => {
     menuButton.focus();
   }
 });
-window.matchMedia('(min-width: 601px)').addEventListener('change', closeMenu);
+window.matchMedia('(min-width: 801px)').addEventListener('change', closeMenu);
 
 // Keep navigation accurate without rewriting the URL while scrolling.
 const sections = navLinks.map(link => document.querySelector(link.getAttribute('href')));
@@ -156,3 +156,33 @@ copyEmail.addEventListener('click', async () => {
   const copied = await copyText('mrhassan.bracu@gmail.com');
   notify(copied ? 'Email address copied.' : 'Email: mrhassan.bracu@gmail.com');
 });
+
+// Visual enhancements only: content stays fully visible without them.
+const siteHeader = document.querySelector('.site-header');
+const updateHeader = () => siteHeader.classList.toggle('is-scrolled', window.scrollY > 12);
+window.addEventListener('scroll', updateHeader, { passive: true });
+updateHeader();
+
+if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.filter(entry => entry.isIntersecting).forEach((entry, index) => {
+      entry.target.style.setProperty('--reveal-delay', `${Math.min(index, 5) * 80}ms`);
+      entry.target.classList.add('is-visible');
+      revealObserver.unobserve(entry.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  // Only content below the fold is hidden, so nothing visible flashes on load.
+  document.querySelectorAll('.section-label, .section h2, .section-heading p, .about-copy, .paper, .thesis-details, .project-toolbar, .project-card, .experience-intro > p, .academic-mark, .timeline-entry, .skills-list > div, .contact-grid > div, .references').forEach(element => {
+    if (element.getBoundingClientRect().top < window.innerHeight) return;
+    element.classList.add('reveal');
+    revealObserver.observe(element);
+  });
+}
+
+if (window.matchMedia('(hover: hover)').matches) {
+  projects.forEach(card => card.addEventListener('pointermove', event => {
+    const rect = card.getBoundingClientRect();
+    card.style.setProperty('--spot-x', `${event.clientX - rect.left}px`);
+    card.style.setProperty('--spot-y', `${event.clientY - rect.top}px`);
+  }));
+}

@@ -16,7 +16,7 @@ Open `http://localhost:8000`. No package installation, build step, API keys, or 
 
 - `index.html`: complete, readable content with semantic sections and publication links.
 - `css/styles.css`: responsive layouts, locally hosted fonts, reduced-motion support, and print styles.
-- `js/script.js`: mobile navigation, project filters, citation dialog and copy controls.
+- `js/script.js`: mobile navigation, project filters, citation dialog and copy controls, plus optional visual effects (header elevation, scroll reveals, card highlights).
 - `assets/`: downloadable source CV, favicon, and WOFF2 fonts with license notices. Fonts are subset for Latin content and the Bengali illustration.
 - `research.html`, `projects.html`, `education.html`, `skills.html`: redirects preserving the previous site's URLs.
 
