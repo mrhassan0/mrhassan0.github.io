@@ -1,128 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Rakibul Hassan | M.Sc. Student in CSE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f8f2">
+  <meta name="description" content="Md. Rakibul Hassan — BRAC University Computer Science graduate focused on AI-driven cybersecurity, reinforcement learning, and trustworthy adaptive security systems. Research, publications, and projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Md. Rakibul Hassan | AI Security & Reinforcement Learning">
+  <meta property="og:description" content="Exploring intelligent, adaptive security systems. Research, publications, and projects by Md. Rakibul Hassan.">
+  <title>Md. Rakibul Hassan — AI Security & Reinforcement Learning</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/noto-serif-display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <noscript><style>@media(max-width:600px){html{scroll-padding-top:150px}.header-inner{height:auto;padding-block:16px}.menu-toggle{display:none}.header-inner nav{display:flex;position:static;order:3;flex-basis:100%;flex-wrap:wrap;gap:12px;padding:0;border:0;box-shadow:none}.header-inner nav a{font-size:12px;padding:3px 0}}</style></noscript>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">Md. <span>Rakibul </span>Hassan</div>
-                <nav>
-                    <ul id="nav-menu">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="research.html">Research</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="education.html">Education</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                    </ul>
-                    <div class="mobile-menu" id="mobile-menu">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Md. Rakibul Hassan</h1>
-                <div class="profile-image">
-                    <img src="assets/profile.jpg" alt="Md. Rakibul Hassan">
-                </div>
-                <h2>M.Sc. Student in Computer Science and Engineering</h2>
-                <p>
-                    M.Sc. student in Computer Science and Engineering at BRAC University with a strong academic background
-                    (CGPA: 3.94/4.00), teaching assistance experience, and research in AI-driven cybersecurity.
-                    Currently working on reinforcement learning–based automated network penetration testing and
-                    realistic network simulation environments for security research.
-                </p>
-                <div class="hero-btns">
-                    <a href="research.html" class="btn">Explore Research</a>
-                    <a href="projects.html" class="btn btn-outline">View Projects</a>
-                </div>
-            </div>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="Md. Rakibul Hassan, home">rh<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation"><span>Menu</span><span class="menu-icon" aria-hidden="true"></span></button>
+      <nav id="navigation" aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+      <a class="header-cv" href="assets/Md_Rakibul_Hassan_CV.pdf" download>Download CV <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> AI SECURITY · REINFORCEMENT LEARNING</p>
+        <h1 id="hero-title">Md. Rakibul<br><em>Hassan.</em></h1>
+        <p class="hero-statement">Exploring intelligence.<br>Building <span>trustworthy security.</span></p>
+        <p class="hero-description">Computer Science graduate from BRAC University, focused on AI-driven cybersecurity, reinforcement learning, and adaptive security systems.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a><a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> Dhaka, Bangladesh <span class="location-separator">/</span> BRAC University</div>
+      </div>
+      <div class="research-visual" role="img" aria-label="Conceptual illustration of an adaptive security network">
+        <div class="visual-topline"><span><i aria-hidden="true"></i> RESEARCH FOCUS</span><span aria-hidden="true">FIG. 01</span></div>
+        <svg class="network-art" viewBox="0 0 480 440" fill="none" aria-hidden="true">
+          <defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#abc6aa" opacity=".18"/></pattern><radialGradient id="glow"><stop stop-color="#a6c78b" stop-opacity=".13"/><stop offset="1" stop-color="#a6c78b" stop-opacity="0"/></radialGradient></defs>
+          <path fill="url(#dots)" d="M0 0h480v440H0z"/><circle cx="240" cy="217" r="194" fill="url(#glow)"/>
+          <g stroke="#b7cfa7" stroke-opacity=".19"><circle cx="240" cy="217" r="164"/><circle cx="240" cy="217" r="119" stroke-dasharray="3 7"/><ellipse cx="240" cy="217" rx="164" ry="59" transform="rotate(-40 240 217)"/><ellipse cx="240" cy="217" rx="164" ry="59" transform="rotate(40 240 217)"/></g>
+          <g stroke="#a9c290" stroke-opacity=".5"><path d="m240 217-118-80m118 80 110-91m-110 91 139 31m-139-31 38 139m-38-139-130 86m12-166 228-11m0 0 29 122m0 0L278 356m0 0-168-53m0 0 12-166"/><path d="m122 137 156 219m72-230-240 177" stroke-dasharray="3 6" stroke-opacity=".3"/></g>
+          <g class="signal-path" stroke="#d6edaa" stroke-width="1.6" stroke-dasharray="4 190"><path d="m122 137 118 80 110-91"/><path d="m379 248-139-31 38 139"/></g>
+          <g fill="#183f35" stroke="#a8c38a"><rect x="105" y="120" width="34" height="34" rx="8"/><rect x="333" y="109" width="34" height="34" rx="8"/><rect x="362" y="231" width="34" height="34" rx="8"/><rect x="261" y="339" width="34" height="34" rx="8"/><rect x="93" y="286" width="34" height="34" rx="8"/></g>
+          <g stroke="#d6e8be" stroke-width="1.4"><path d="M114 132h16v8h-16zm8 8v4m-5 0h10M342 122h16m-16 5h16m-13-9h10v14h-10M371 243h16v10h-16zm4 14h8m-4-4v4M272 350l6-3 6 3v6c-1 3-6 5-6 5s-5-2-6-5zM103 298h14v10h-14zm3-4h8m-4 0v4"/></g>
+          <circle class="core-halo" cx="240" cy="217" r="53" stroke="#c0dba2" stroke-opacity=".25"/>
+          <rect x="206" y="183" width="68" height="68" rx="19" fill="#d4e5ae"/>
+          <g stroke="#204235" stroke-width="1.8"><rect x="226" y="203" width="28" height="28" rx="5"/><path d="M233 196v7m7-7v7m7-7v7m-14 28v7m7-7v7m7-7v7m-28-28h7m-7 7h7m-7 7h7m28-14h7m-7 7h7m-7 7h7m-25-13h8v12h-8z"/></g>
+          <g fill="#b8cdb1" font-family="monospace" font-size="9" letter-spacing="1.2"><text x="80" y="107">ENVIRONMENT</text><text x="327" y="96">POLICY</text><text x="346" y="286">DEFENSE</text><text x="250" y="394">FEEDBACK</text><text x="62" y="337">OBSERVATION</text></g>
+          <g fill="#d6e8be"><circle cx="240" cy="53" r="3"/><circle cx="83" cy="264" r="3"/><circle cx="389" cy="148" r="3"/></g>
+        </svg>
+        <div class="visual-caption"><p>Learning to adapt.<br><em>Designed to defend.</em></p><span class="visual-arrow" aria-hidden="true">↗</span></div>
+        <div class="visual-bottomline"><span>INTELLIGENCE × SECURITY</span><span>CONCEPTUAL NETWORK</span></div>
+      </div>
     </section>
-
-    <!-- Quick Highlights -->
-    <section class="highlights">
-        <div class="container">
-            <div class="highlight-cards">
-                <div class="highlight-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Education</h3>
-                    <p>M.Sc. in Computer Science and Engineering</p>
-                    <p>BRAC University</p>
-                    <p>CGPA: 3.94/4.00 (B.Sc.)</p>
-                    <a href="education.html">Learn more</a>
-                </div>
-                
-                <div class="highlight-card">
-                    <i class="fas fa-flask"></i>
-                    <h3>Research</h3>
-                    <p>Automated Network Penetration Testing using Reinforcement Learning</p>
-                    <a href="research.html">View details</a>
-                </div>
-                
-                <div class="highlight-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Technical Skills</h3>
-                    <p>Python, Network Security Tools, Machine Learning</p>
-                    <a href="skills.html">See all skills</a>
-                </div>
-            </div>
-        </div>
+    <div class="container"><div class="credentials-strip"><div><strong>3.94<span>/4.00</span></strong><p>B.Sc. Computer Science · BRAC University</p></div><div><strong>2</strong><p>Presented conference papers</p></div><div><strong>9</strong><p>Consecutive merit scholarships</p></div><a href="#about" class="scroll-cue">A little more about me <span aria-hidden="true">↓</span></a></div></div>
+    <section class="section container about-section" id="about" aria-labelledby="about-title">
+      <div class="section-label"><span>01 / ABOUT</span><span class="label-line"></span></div>
+      <div class="about-grid"><h2 id="about-title">At the intersection of<br><em>learning & security.</em></h2><div class="about-copy"><p>I’m a Computer Science graduate with a focus on making security systems more intelligent, adaptive, and robust.</p><p>My work explores reinforcement learning for automated network penetration testing, safety in Bangla language models, and the human side of privacy and security.</p><p>I developed NASimEmu+, an IDS-aware dynamic network penetration-testing framework using deep hierarchical reinforcement learning for policy learning in defended, noisy, and large-scale networks.</p><div class="interest-tags"><span>AI security</span><span>Security automation</span><span>Reinforcement learning</span></div></div></div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>Md. Rakibul Hassan</h3>
-                    <p>M.Sc. Student in CSE</p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/mrhassan0" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/mrhassan0" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="mailto:mrhassan.bracu@gmail.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Contact Info</h3>
-                    <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
-                        <p><i class="fas fa-phone"></i> +880 1320499508</p>
-                        <p><i class="fas fa-envelope"></i> mrhassan.bracu@gmail.com</p>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="research.html">Research</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="education.html">Education</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2026 Md. Rakibul Hassan. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+    <section class="research-section section" id="research" aria-labelledby="research-title"><div class="container">
+      <div class="section-label"><span>02 / RESEARCH & PUBLICATIONS</span><span class="label-line"></span></div>
+      <div class="section-heading"><div><h2 id="research-title">Questions into<br><em>contributions.</em></h2><p>From adaptive network defense to safer language models.</p></div><a class="text-link" href="https://scholar.google.com/citations?user=CzIrZ8gAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a></div>
+      <article class="paper paper-featured"><div class="paper-main"><div class="paper-meta"><span class="paper-number">01</span><span>NSS 2026</span><span class="tag">PRESENTED · CORE RANK B</span></div><h3>DYNAS</h3><p class="paper-subtitle">A Dynamic Network Penetration Testing Framework Using Deep Hierarchical Reinforcement Learning</p><p class="paper-authors"><strong>M. R. Hassan</strong>, M. Islam, M. A. Alam, M. I. Hossain & S. Shatabda</p><p class="paper-summary">An IDS-aware framework that uses hierarchical reinforcement learning (Pen-DHRL) to learn penetration-testing policies in dynamic, defended network environments.</p><p class="paper-venue">20th International Conference on Network and System Security<br>Hangzhou, China · 30 October–1 November 2026</p><div class="paper-links"><a class="text-link" href="https://doi.org/10.48550/arXiv.2610.40214" target="_blank" rel="noopener noreferrer">Read preprint <span aria-hidden="true">↗</span></a><button class="cite-button" type="button" data-citation="dynas" hidden>Cite <span aria-hidden="true">↗</span></button><span class="forthcoming">Proceedings forthcoming</span></div></div><div class="paper-results"><p class="eyebrow">REPORTED RESULTS</p><div class="result"><strong>~64<span>%</span></strong><p>Higher reward per step<br><span>Bridge scenario</span></p></div><div class="result"><strong>~30<span>%</span></strong><p>More captured hosts<br><span>VarB scenario</span></p></div><p class="result-note">Compared with the next-best baseline. Dynamic: ~24% higher reward per step; VarA: ~26% more captured hosts.</p></div></article>
+      <article class="paper paper-secondary"><div class="paper-main"><div class="paper-meta"><span class="paper-number">02</span><span>ICCA 2026</span><span class="tag">PRESENTED</span></div><h3>BanglaVeilGuard</h3><p class="paper-subtitle">Cross-Script Safety Benchmarking and Lightweight Guardrails for Bangla Large Language Models</p><p class="paper-authors"><strong>M. R. Hassan</strong> & M. I. Hossain</p><p class="paper-summary">A Bangla-focused safety benchmark spanning Bangla, Romanized Bangla, and code-mixed prompts, with lightweight guardrails to detect and reduce unsafe outputs in low-resource settings.</p><p class="paper-venue">4th International Conference on Computing Advancements<br>AIUB, Dhaka · 15–16 October 2026</p><div class="paper-links"><a class="text-link" href="https://doi.org/10.48550/arXiv.2608.21880" target="_blank" rel="noopener noreferrer">Read preprint <span aria-hidden="true">↗</span></a><button class="cite-button" type="button" data-citation="bangla" hidden>Cite <span aria-hidden="true">↗</span></button><span class="forthcoming">Proceedings forthcoming</span></div></div><div class="language-visual" aria-hidden="true"><span class="language-symbol">অ</span><div><span>বাংলা</span><span>Romanized</span><span>Code-mixed</span></div><p>THREE FORMS. ONE SAFETY QUESTION.</p></div></article>
+      <details class="thesis-details"><summary><span><span class="eyebrow">UNDERGRADUATE THESIS · DEFENDED</span><strong>Building the foundation: NASimEmu-enhanced</strong></span><span class="details-icon" aria-hidden="true">+</span></summary><div class="thesis-body"><p class="thesis-meta">BRAC University · June–October 2025<br>Supervisors: Dr. Muhammad Iqbal Hossain & Dr. Swakkhar Shatabda</p><h4>Automated Network Penetration Testing Framework Using Reinforcement Learning</h4><ul><li>Led the extension of NASimEmu for realistic, configurable penetration-testing environments.</li><li>Implemented dynamic v2 scenario generation with per-episode stochastic sampling, variable subnet sizes, and randomized host, service, and process configurations.</li><li>Introduced host-state variability and controlled stochastic noise to reduce overfitting and improve policy robustness.</li><li>Refined episode regeneration and the scenario-loading lifecycle while maintaining stable step-level behavior.</li><li>Built reproducible workflows for training, tracing, debugging, and evaluating agents, alongside tooling to compare static and dynamic conditions.</li></ul></div></details>
+    </div></section>
+    <section class="section container projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-label"><span>03 / SELECTED PROJECTS</span><span class="label-line"></span></div>
+      <div class="section-heading"><div><h2 id="projects-title">Ideas, explored.<br><em>Systems, built.</em></h2><p>Experiments, research proposals, and software.</p></div><a class="text-link" href="https://github.com/mrhassan0" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a></div>
+      <div class="project-toolbar"><div class="project-filters" role="group" aria-label="Filter projects" hidden><button type="button" class="active" data-filter="all" aria-pressed="true">All work <span>09</span></button><button type="button" data-filter="ml" aria-pressed="false">Machine learning</button><button type="button" data-filter="security" aria-pressed="false">Security & privacy</button><button type="button" data-filter="software" aria-pressed="false">Software</button></div><span id="project-count" class="project-count" role="status" aria-live="polite">9 projects</span></div>
+      <div class="project-grid">
+        <article class="project-card project-highlight" data-category="ml"><div class="project-top"><span class="project-index">01</span><span class="project-type">EXPERIMENTAL STUDY</span></div><h3>Experimental Analysis<br>of DAgger</h3><p>Comparative experiments and ablation studies of DAgger, Behavior Cloning, and SMILe on handwritten-word recognition and CartPole-v1 control.</p><div class="project-stat"><strong>92<span>%</span></strong><span>CartPole success rate<br>vs. 47% for Behavior Cloning</span></div><p class="project-detail">OCR accuracy improved from 76.16% to 79.45%. Studied expert-query budgets, policy architectures, and noisy or incomplete observations.</p><div class="project-tags"><span>Python</span><span>Imitation learning</span><span>RL</span></div></article>
+        <article class="project-card" data-category="security"><div class="project-top"><span class="project-index">02</span><span class="project-type">RESEARCH PROPOSAL</span></div><h3>Privacy, identity<br>& belonging</h3><p>A proposed qualitative HCI study of privacy risks and information-sharing practices among Urdu-speaking Bihari communities in Bangladesh.</p><p class="project-detail">Examines linguistic stigma, camp life, contested citizenship, and historical marginalization in social media privacy and digital identity management.</p><div class="project-tags"><span>HCI</span><span>Usable privacy</span><span>Social computing</span></div></article>
+        <article class="project-card" data-category="security"><div class="project-top"><span class="project-index">03</span><span class="project-type">RESEARCH PROPOSAL</span></div><h3>One Code,<br>Many Voices</h3><p>How pretext shapes OTP disclosure in Bangladesh. A survey and interview study investigating how scam scenarios influence victim compliance.</p><p class="project-detail">Compares event-based and fabricated pretexts to understand why users comply with or resist OTP disclosure attempts.</p><div class="project-tags"><span>Usable security</span><span>Qualitative research</span></div></article>
+        <article class="project-card" data-category="security software"><div class="project-top"><span class="project-index">04</span><span class="project-type">CRYPTOGRAPHY WORKBENCH</span></div><h3>CipherScope</h3><p>A learning workbench for classical, symmetric, and public-key cryptography, including AES, DES, RSA, and ECC.</p><p class="project-detail">Brute-force and factorization demonstrations, frequency analysis, and algorithm performance comparisons.</p><div class="project-tags"><span>Python</span><span>HTML / CSS</span><span>JavaScript</span></div></article>
+        <article class="project-card" data-category="software"><div class="project-top"><span class="project-index">05</span><span class="project-type">FULL-STACK APPLICATION</span></div><h3>Share-Notes</h3><p>An academic note-sharing platform connecting users, courses, and learning materials.</p><p class="project-detail">Includes note management, search, payments, and messaging modules.</p><div class="project-tags"><span>Flask</span><span>React</span><span>MySQL</span></div></article>
+        <article class="project-card" data-category="software"><div class="project-top"><span class="project-index">06</span><span class="project-type">WEB APPLICATION</span></div><h3>PhD Application System</h3><p>An academic application management platform built with Laravel.</p><p class="project-detail">Database-backed application records and web-based filtering workflows.</p><div class="project-tags"><span>PHP</span><span>Laravel</span><span>SQLite</span></div></article>
+        <article class="project-card" data-category="software"><div class="project-top"><span class="project-index">07</span><span class="project-type">FULL-STACK APPLICATION</span></div><h3>Hire-Wizard</h3><p>A job portal with dedicated recruiter and job-seeker roles.</p><p class="project-detail">Job postings, applications, profiles, skill records, and JWT-based authentication.</p><div class="project-tags"><span>Node.js / Express</span><span>React</span><span>MySQL</span></div></article>
+        <article class="project-card" data-category="ml"><div class="project-top"><span class="project-index">08</span><span class="project-type">MACHINE LEARNING</span></div><h3>Prediction of<br>Obesity Levels</h3><p>A classification model that predicts obesity categories from eating habits, physical conditions, and lifestyle features.</p><div class="project-tags"><span>Python</span><span>Scikit-learn</span></div></article>
+        <article class="project-card" data-category="software"><div class="project-top"><span class="project-index">09</span><span class="project-type">COMPUTER GRAPHICS</span></div><h3>Space-Station-Siege</h3><p>A 3D computer graphics game with player movement, shooting mechanics, and real-time game logic.</p><div class="project-tags"><span>Python</span><span>OpenGL</span></div></article>
+      </div>
+    </section>
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title"><div class="container">
+      <div class="section-label"><span>04 / EDUCATION & EXPERIENCE</span><span class="label-line"></span></div>
+      <div class="experience-layout"><div class="experience-intro"><h2 id="experience-title">A foundation<br>for <em>what’s next.</em></h2><p>Learning deeply.<br>Sharing what I learn.</p><div class="academic-mark" aria-hidden="true"><span>BRAC</span><span>UNIVERSITY</span><div>2022 — 2026</div></div></div><div class="timeline">
+        <article class="timeline-entry"><div class="timeline-meta"><span>SEPT 2022 — JAN 2026</span><span>EDUCATION</span></div><h3>B.Sc. in Computer Science</h3><p class="institution">BRAC University · Dhaka, Bangladesh</p><div class="grade">3.94 <span>/ 4.00 CGPA</span></div><p>Algorithms · Computer Networks · Cryptography · Artificial Intelligence · Operating Systems</p><div class="award-row"><span aria-hidden="true">✳</span><p><strong>Merit Scholarship</strong><br>9 consecutive semesters</p></div><div class="award-row"><span aria-hidden="true">✳</span><p><strong>Dean’s & VC’s List</strong><br>Qualified with GPA ≥ 3.7</p></div></article>
+        <article class="timeline-entry"><div class="timeline-meta"><span>FEB — MAY 2025</span><span>TEACHING & MENTORING</span></div><h3>Undergraduate Teaching Assistant</h3><p class="institution">Discrete Mathematics · BRAC University</p><p>Mentored <strong>80+ students</strong> through problem-solving sessions and office hours. Prepared quiz solutions and graded quizzes and exams covering 25% of the course grade.</p><p class="supervisor">Supervisor: Mr. Sakib Anwar Rieyan</p></article>
+      </div></div>
+    </div></section>
+    <section class="section container skills-section" id="skills" aria-labelledby="skills-title"><div class="section-label"><span>05 / TECHNICAL TOOLKIT</span><span class="label-line"></span></div><div class="section-heading"><h2 id="skills-title">Tools behind<br><em>the work.</em></h2><p>From learning algorithms<br>to the systems around them.</p></div><dl class="skills-list"><div><dt><span>01</span> Programming</dt><dd>Python <i>·</i> JavaScript <i>·</i> R</dd></div><div><dt><span>02</span> Machine learning</dt><dd>Scikit-learn <i>·</i> PyTorch <small>(basic)</small> <i>·</i> Reinforcement learning concepts</dd></div><div><dt><span>03</span> Networks & security</dt><dd>Wireshark <i>·</i> Kali <i>·</i> NS3 <i>·</i> Packet Tracer</dd></div><div><dt><span>04</span> Web & databases</dt><dd>Flask <i>·</i> Laravel <i>·</i> React <i>·</i> MySQL <i>·</i> SQLite</dd></div><div><dt><span>05</span> Foundations & graphics</dt><dd>Algorithms <i>·</i> Data structures <i>·</i> Cryptography <i>·</i> Assembly (EMU8086) <i>·</i> OpenGL</dd></div></dl></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container"><div class="section-label"><span>06 / GET IN TOUCH</span><span class="label-line"></span></div><div class="contact-grid"><div><h2 id="contact-title">Let’s start<br>a <em>conversation.</em></h2><p>AI security, reinforcement learning,<br>and the questions in between.</p><a class="contact-email" href="mailto:mrhassan.bracu@gmail.com">mrhassan.bracu@gmail.com <span aria-hidden="true">↗</span></a><button class="copy-email" type="button" hidden>Copy email address <span aria-hidden="true">⧉</span></button></div><div class="contact-links"><p class="eyebrow">ELSEWHERE & CONTACT</p><a href="https://github.com/mrhassan0" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=CzIrZ8gAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a><a href="assets/Md_Rakibul_Hassan_CV.pdf" download>Download curriculum vitae <span aria-hidden="true">↓</span></a><a href="tel:+8801320499508">+880 1320499508 <span aria-hidden="true">↗</span></a><p class="contact-location">Dhaka, Bangladesh</p></div></div><details class="references"><summary>Academic references <span aria-hidden="true">+</span></summary><div class="references-grid"><div><h3>Dr. Swakkhar Shatabda</h3><p>Professor, Department of Computer Science and Engineering<br>BRAC University</p><a href="mailto:swakkhar.shatabda@bracu.ac.bd">swakkhar.shatabda@bracu.ac.bd ↗</a></div><div><h3>Dr. Muhammad Iqbal Hossain</h3><p>Associate Professor, Department of Computer Science and Engineering<br>BRAC University</p><a href="mailto:iqbal.hossain@bracu.ac.bd">iqbal.hossain@bracu.ac.bd ↗</a></div></div></details><footer class="site-footer"><a class="wordmark" href="#home" aria-label="Back to home">rh<span>.</span></a><p>© 2026 Md. Rakibul Hassan</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer></div></section>
+  </main>
+  <dialog id="citation-dialog" aria-labelledby="citation-title"><div class="dialog-header"><p class="eyebrow">BIBTEX · PREPRINT</p><button type="button" class="dialog-close" aria-label="Close citation">×</button></div><h2 id="citation-title">Cite this work</h2><p>Preprint citation; conference proceedings are forthcoming.</p><pre><code id="citation-text"></code></pre><button class="button button-primary" type="button" id="copy-citation">Copy BibTeX <span aria-hidden="true">⧉</span></button><p id="citation-status" role="status" aria-live="polite"></p></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
