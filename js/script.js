@@ -163,6 +163,22 @@ const updateHeader = () => siteHeader.classList.toggle('is-scrolled', window.scr
 window.addEventListener('scroll', updateHeader, { passive: true });
 updateHeader();
 
+// News ticker: a second, hidden copy of the stories makes the loop seamless.
+const newsTicker = document.querySelector('.news-ticker');
+if (newsTicker && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const newsList = newsTicker.querySelector('.news-list');
+  [...newsList.children].forEach(item => {
+    const copy = item.cloneNode(true);
+    copy.setAttribute('aria-hidden', 'true');
+    copy.inert = true;
+    newsList.append(copy);
+  });
+  const setTickerSpeed = () => newsTicker.style.setProperty('--ticker-duration', `${newsList.scrollWidth / 2 / 45}s`);
+  setTickerSpeed();
+  window.addEventListener('resize', setTickerSpeed);
+  newsTicker.classList.add('is-ticking');
+}
+
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const revealObserver = new IntersectionObserver(entries => {
     entries.filter(entry => entry.isIntersecting).forEach((entry, index) => {
@@ -172,7 +188,7 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
     });
   }, { rootMargin: '0px 0px -8% 0px' });
   // Only content below the fold is hidden, so nothing visible flashes on load.
-  document.querySelectorAll('.section-label, .section h2, .section-heading p, .news-intro > p, .news-item, .about-copy, .paper, .thesis-details, .project-toolbar, .project-card, .experience-intro > p, .academic-mark, .timeline-entry, .skills-list > div, .contact-grid > div, .references').forEach(element => {
+  document.querySelectorAll('.section-label, .section h2, .section-heading p, .news-intro > p, .news-ticker, .about-copy, .paper, .thesis-details, .project-toolbar, .project-card, .experience-intro > p, .academic-mark, .timeline-entry, .skills-list > div, .contact-grid > div, .references').forEach(element => {
     if (element.getBoundingClientRect().top < window.innerHeight) return;
     element.classList.add('reveal');
     revealObserver.observe(element);
